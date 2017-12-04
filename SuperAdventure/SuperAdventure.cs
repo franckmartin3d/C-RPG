@@ -20,10 +20,15 @@ namespace SuperAdventure
         {
             InitializeComponent();
 
+            Location location = new Location(1, "Home", "this is your house");
+            location.ID = 1;
+            location.Name = "home";
+            location.Description = "This is your house";
+
             _player = new Player();
 
             _player.CurrentHitPoints = 10;
-            _player.MaximunHitPoints = 10;
+            _player.MaximumHitPoints = 10;
             _player.Gold = 20;
             _player.ExperiencePoints = 0;
             _player.Level = 1;
